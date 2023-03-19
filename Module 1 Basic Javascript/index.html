@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    document.write("hello world")
+
+    var a=10;
+    var b=20;
+    var z=a+b;
+    document.write("<br>"+z);
+
+    //data type are 2 type
+    //primitive data
+    var mark=10;//number primitive data type
+    var name="jauadul Karim" //string primitive data type
+    var isStudent=false;//boolean 
+    var occupation=null;//null no value are here
+    var salary;//undefined
+
+    //non primitive data
+    //object
+    let A={
+        name:"jauadul karim",
+        age:25,
+        city:null
+    }
+    document.write("<br>"+A.city);
+    //array
+    let B=['dhaka','Chittagong','rajshahi']
+    document.write("<br>"+B+ "<br>")
+
+    //if else
+    var rashikAge=55;
+    if(rashikAge>=18 && rashikAge<50){
+        document.write("rashik is a adult boy");
+    }else if(rashikAge<=18 && rashikAge>0){
+        document.write("rashik is not a adult person");
+    }else {
+        document.write("rashik bura manush"+"<br>");
+    }
+    var marks=100;
+    if(marks>=80 && marks<=100){
+        document.write("A+")
+    }else if(marks>=70 && marks<80){
+        document.write("A")
+    }else if(marks>=60 && marks<70){
+        document.write("A-")
+    }else if(marks>=50 && marks<60){
+        document.write("B")
+    }else if(marks>=40 && marks<50){
+        document.write("C")
+    }else if(marks>=33 && marks<40){
+        document.write("D")
+    }else if(marks>=0 && marks<33){
+        document.write("F")
+    }else{
+        document.write("Something is Error,Please Contact with Class Teacher")
+    }
+
+
+    //switch
+
+    // let Mark=5;
+    // switch (true) {
+    //     case (Mark<=100 && Mark>=80):
+    //         document.write("<br>"+'A+')
+    //         break;
+    //     case(Mark>=70 && Mark<80):
+    //     document.write('A')
+    //         break;
+    //         case(Mark>=60 && Mark<70):
+    //     document.write("<br>"+'A-')
+    //         break;
+    //         case(Mark>=50 && Mark<60):
+    //     document.write("<br>"+'B')
+    //         break;
+    //         case(Mark>=40 && Mark<50):
+    //     document.write("<br>"+'C')
+    //         break;
+    //         case(Mark>=33 && Mark<40):
+    //     document.write("<br>"+'D')
+    //         break;
+    //     default:
+    //         document.write("<br>"+"F")
+    // }
+
+
+    let Mark=50;
+    switch (true) {
+        case (Mark<=100 && Mark>=80):
+            document.write("<br>"+'A+'+"<br>")
+            break;
+        case(Mark<80 && Mark>=70):ANGLE_instanced_arrays
+            document.write("<br>"+'A'+"<br>")
+        break;
+        case(Mark<70 && Mark>=60):
+            document.write("<br>"+'A-'+"<br>")
+        break;
+        case(Mark<60 && Mark>=50):
+            document.write("<br>"+'B'+"<br>")
+        break;
+        case(Mark<50 && Mark>=40):
+            document.write("<br>"+'C'+"<br>")
+        break;
+        case(Mark<33 && Mark>=40):
+            document.write("<br>"+'D'+"<br>")
+        break;
+        default:
+            document.write("<br>"+"F"+"<br>")
+            break;
+    }
+    //loop 
+
+    var i;
+    for(i=0;i<10;i++){
+        document.write(i+"<button>submit</button> <br>")
+    }
+    const numString = "123";
+    const num = parseInt(numString, 10);
+    document.write(num);
+    </script>
+</body>
+</html>
