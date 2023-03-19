@@ -1,8 +1,28 @@
-rabbil vy 
+#####rabbil vy
 https://github.com/rupomsoft/React-Redux-CRUD-Example
 
-github
+####github
+//new
+git init
+git add .
+git commit -m "commit"
+git branch -M main
+git remote add orgin http.........
+git push -u origin main
 
+
+
+//existing
 git add .
 git commit -m "ja eccha /updated/commited"
 git push
+
+
+javascript
+
+https://www.youtube.com/@Codevolution/playlists
+https://with.zonayed.me/js-basic/
+https://www.w3schools.com/js/default.asp
+
+
+
