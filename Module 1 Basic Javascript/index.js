@@ -225,4 +225,8 @@ console.log(resum);
 var dada=[2,5,7,9,8]
 var r=dada.splice(0,2)
 console.log(r);
+console.log("rashik")
+
+
+
 

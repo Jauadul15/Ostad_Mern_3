@@ -14,7 +14,7 @@ git push -u origin main
 
 //existing
 git add .
-git commit -m "ja eccha /updated/commited"
+git commit -m "commit"
 git push
 
 
