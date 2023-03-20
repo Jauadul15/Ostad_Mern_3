@@ -143,3 +143,39 @@ for(var item in myDetail){
     console.log(myDetail[item])
 }
 
+//array concate
+var kk=['a','b','c'];
+var cc=['v','r','t']
+var result = kk.concat(cc);
+console.log(result);
+
+//array form
+//string k every word alada kore array kore show kore aitai form er kaj
+var arr=Array.from("Jauadul Karim")
+//console.log(arr);
+console.log(arr[4]);
+
+//array filter
+
+var arrayfilter=[34,545,76,768,879,67];
+
+var arrayresult=arrayfilter.filter(function (item){
+
+    return item<100;
+})
+console.log(arrayresult);
+//array find method
+
+var ar=[432,56,76,76,8]
+var resutl=ar.find(function (value){
+    return value<77
+})
+console.log(resutl);
+// array find index method
+//jeita value shb cheye choto 70 er first e jei index thakbe oitar oita e output hbe
+var kala=[32,56,76,76,8]
+var res=kala.findIndex(function (value){
+    return value<70
+})
+console.log(res);
+
