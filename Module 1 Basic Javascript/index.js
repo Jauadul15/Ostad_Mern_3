@@ -179,3 +179,50 @@ var res=kala.findIndex(function (value){
 })
 console.log(res);
 
+//array foreach
+//array er bhitor theke element gula ekta ekta kore ber kore ana...
+
+var kala=[32,56,76,76,8]
+kala.forEach(function (item){
+    console.log(item);
+})
+//array index ber kora
+var shada=[32,56,534,4,78,78]
+var resu=shada.includes(4)//includes hocche ai element ta ase kina and oitar ekta boolean type bole dei
+var resul=shada.indexOf(78)
+console.log(resul,resu);
+
+//array reverse
+//ultai dei pura array ta k
+var my=[23,453,563,6456,47,76,6]
+var result=my.reverse()
+console.log(result);
+
+//array push ekta element k dukano array er modde
+var my=[23,453,563,6456,47,76,6]
+my.push(34)
+console.log(my);
+
+//array pop
+// last element delete kore fele
+var my=[23,453,563,6456,47,76,6]
+my.pop()
+my.pop()
+my.pop()
+console.log(my);
+
+//array sort
+//choto theke boro sort//r boro thekek choto reverse
+var myy=[3,66,6,4]
+var resulttt=myy.sort().reverse();
+console.log(resulttt);
+//slice array
+var ut=[223,34,5,456,65,6]
+var resum=ut.slice(0,3)
+console.log(resum);
+
+//array splice
+var dada=[2,5,7,9,8]
+var r=dada.splice(0,2)
+console.log(r);
+
