@@ -15,13 +15,14 @@ if(age>0 && age<18){
 }else{
     console.log("Adult")
 }
+//if else if
 
-var age=80;
-if(age>0 && age<18){
+let Age=80;
+if(Age>0 && Age<18){
     console.log("Child")
-}else if(age>=18 && age<50){
+}else if(Age>=18 && Age<50){
     console.log("adult")
-}else if(age>=50 && age<70){
+}else if(Age>=50 && Age<70){
     console.log("Full Adult")
 }else{
     console.log("Bura")
@@ -59,13 +60,13 @@ switch (true){
 
 //for loop
 
-var i;
+let i;
 for(i=0;i<10;i++){
     console.log("My name is JAuad")
 }
 //while loop
 
-var p=0;
+let p=0;
 while (p<10){
     console.log(p)
     p++;
@@ -223,9 +224,73 @@ console.log(resum);
 
 //array splice
 var dada=[2,5,7,9,8]
-var r=dada.splice(0,2)
-console.log(r);
+var r=dada.splice(1,3)
+console.log(dada);
 console.log("rashik")
+
+//string method
+//charAt
+let bd="bangladesh"
+console.log(bd.charAt(7))
+
+//concat
+let id="india"
+let b="bangladesh"
+console.log(id.concat(b))
+//indexof string
+console.log(b.indexOf("g"))
+//string e sesh e koto nmbr index tate a ase!!
+console.log(b.lastIndexOf("a"))
+//replace 
+
+let kkk="srilan"
+console.log(kkk.replace("lan","lanka"))
+
+//substrt
+let da = "bangladesh"
+console.log(da.substr(6,4));
+//substring
+console.log(da.substring(6,10));
+//lowercase
+console.log(da.toLowerCase())
+//uppercase
+console.log(da.toUpperCase());
+
+//trim
+let yes="  rashik    "
+let rt=yes.trim()
+
+console.log(rt.length)
+
+//date object
+
+let obj=new Date();
+console.log(obj.getDate())
+console.log(obj.getFullYear())
+console.log(obj.getHours())
+console.log(obj.getMinutes())
+
+//math
+let tyson=2.6;
+console.log(Math.abs(tyson))
+console.log(Math.round(tyson))
+console.log(Math.ceil(tyson))
+console.log(Math.floor(tyson))
+console.log(Math.max(3,23,42,5))
+console.log(Math.min(3,23,42,5))
+console.log(Math.random())
+
+
+//nmbr object
+
+let asdas="5.43321425";
+console.log(Number.isFinite(asdas))
+console.log(Number.isInteger(asdas))
+console.log(Number.parseFloat(asdas))
+console.log(Number.parseInt(asdas))
+console.log(asdas.toString())
+
+
 
 
 
