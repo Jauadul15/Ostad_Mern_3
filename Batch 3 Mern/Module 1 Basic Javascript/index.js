@@ -289,3 +289,7 @@ console.log(Number.isInteger(asdas))
 console.log(Number.parseFloat(asdas))
 console.log(Number.parseInt(asdas))
 console.log(asdas.toString())
+
+const numString = "123";
+const num = parseInt(numString,10);
+console.log(num)
