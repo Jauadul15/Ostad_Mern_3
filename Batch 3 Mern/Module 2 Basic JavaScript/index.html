@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<button onClick="objAlert()">objalart</button><br>
-<button onClick="objConfirm()">objConfirm</button><br>
-<button onClick="objPrompt()">objPromt</button><br>
-<button onClick="objOpen()">objOpen</button><br>
-<button onClick="objClose()">close</button><br>
+<body onload="MyEvent('load hoyeche')">
+<!--<button onClick="objAlert()">objalart</button><br>-->
+<!--<button onClick="objConfirm()">objConfirm</button><br>-->
+<!--<button onClick="objPrompt()">objPromt</button><br>-->
+<!--<button onClick="objOpen()">objOpen</button><br>-->
+<!--<button onClick="objClose()">close</button><br>-->
+<button onclick="MyEvent('click hoise')">Click HOise</button>
+<button onmouseover="MyEvent('mouse over')">mouse over</button>
+<button onmouseout="MyEvent('mouse out')">Click HOise</button>
+<input onchange="MyEvent('change hoise')">
+<input onkeydown="MyEvent('key down hoise')">
+<input onkeyup="MyEvent('up hoyeche')">
 <script>
-
+//window object
     // function objAlert() {
     //    let alart= alert("this is under construction")
     //     return alart
@@ -36,41 +42,45 @@
     //     alert("5 secend later close downd")
     // },5000)
     //
+//navigator
+//     var appCodeName=navigator.appCodeName;
+//     var appName=navigator.appName;
+//     var appVersion=navigator.appVersion;
+//     var cookieEnabled=navigator.cookieEnabled;
+//     var language=navigator.language;
+//     var userAgent=navigator.userAgent;
+//     var platform=navigator.platform;
+//
+//     document.write(appCodeName+"<br>")
+//     document.write(appName+"<br>")
+//     document.write(appVersion+"<br>")
+//     document.write(cookieEnabled+"<br>")
+//     document.write(language+"<br>")
+//     document.write(userAgent+"<br>")
+//     document.write(platform+"<br>")
+//
+//     //geo location
+//
+//     navigator.geolocation.getCurrentPosition(function (position) {
+//        var accuracy= position.coords.accuracy
+//        var altitude= position.coords.altitude
+//        var latitude= position.coords.latitude
+//        var altitudeAccuracy= position.coords.altitudeAccuracy
+//        var longitude= position.coords.longitude
+//         var speed=position.coords.speed;
+//
+//         document.write("accuracy :"+accuracy+"<br>")
+//         document.write("altitude :"+altitude+"<br>")
+//         document.write("latitude :"+latitude+"<br>")
+//         document.write("altitudeAccuracy :"+altitudeAccuracy+"<br>")
+//         document.write("longitude :"+longitude+"<br>")
+//         document.write("speed :"+speed+"<br>")
+//     })
+//############ coomon event in html by javascript
 
-    var appCodeName=navigator.appCodeName;
-    var appName=navigator.appName;
-    var appVersion=navigator.appVersion;
-    var cookieEnabled=navigator.cookieEnabled;
-    var language=navigator.language;
-    var userAgent=navigator.userAgent;
-    var platform=navigator.platform;
-
-    document.write(appCodeName+"<br>")
-    document.write(appName+"<br>")
-    document.write(appVersion+"<br>")
-    document.write(cookieEnabled+"<br>")
-    document.write(language+"<br>")
-    document.write(userAgent+"<br>")
-    document.write(platform+"<br>")
-
-    //geo location
-
-    navigator.geolocation.getCurrentPosition(function (position) {
-       var accuracy= position.coords.accuracy
-       var altitude= position.coords.altitude
-       var latitude= position.coords.latitude
-       var altitudeAccuracy= position.coords.altitudeAccuracy
-       var longitude= position.coords.longitude
-        var speed=position.coords.speed;
-
-        document.write("accuracy :"+accuracy+"<br>")
-        document.write("altitude :"+altitude+"<br>")
-        document.write("latitude :"+latitude+"<br>")
-        document.write("altitudeAccuracy :"+altitudeAccuracy+"<br>")
-        document.write("longitude :"+longitude+"<br>")
-        document.write("speed :"+speed+"<br>")
-
-    })
+function MyEvent(msg) {
+    console.log(msg);
+}
 
 </script>
 </body>
