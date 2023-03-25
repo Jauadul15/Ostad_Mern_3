@@ -15,17 +15,23 @@
 // let massgae=age>=18?("adult"):("not adult");
 // console.log(massgae)
 
-function gradeCalculator(grade) {
-    if (grade >= 90) {
-        return "A";
-    } else if (grade >= 80) {
-        return "B";
-    } else if (grade >= 70) {
-        return "C";
-    } else if (grade >= 60) {
-        return "D";
-    } else {
-        return "F";
-    }
-}
-console.log(gradeCalculator(101));
+// function gradeCalculator(grade) {
+//     if (grade >= 90) {
+//         return "A";
+//     } else if (grade >= 80) {
+//         return "B";
+//     } else if (grade >= 70) {
+//         return "C";
+//     } else if (grade >= 60) {
+//         return "D";
+//     } else {
+//         return "F";
+//     }
+// }
+// console.log(gradeCalculator(101));
+
+// <button onClick="objClose()">close</button><br>
+//
+// function objClose() {
+//      close();
+//    }
