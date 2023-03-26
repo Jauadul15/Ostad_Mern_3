@@ -31,3 +31,10 @@ https://www.youtube.com/watch?v=sTeoEFzVNSc&t=14s
 //faisal vy
 https://github.com/faisal2410/js_basic_ostad_b3
 
+আপনার বেসিক কনসেপ্ট ক্লিয়ার করার জন্য নোট আকারে তৈরী করা এই রিপজটিরিগুলো আশা করি আপনাকে হেল্প করবে। এই রিপজিটরি গুলো স্টাডি করার পর আপনি ১০০ প্র্যাকটিস প্রজেক্ট করে ফেলবেন। ইনশাআল্লাহ জাভাস্ক্রিপ্টের ভিত্তি আপনার মজবুত হয়ে যাবে। আর জাভাস্ক্রিপ্টের ভিত্তি মজবুত থাকলে মার্নে আপনি রাজত্ব করতে পারবেন ইনশাআল্লাহ।
+রিপজিটরি লিংক :
+https://github.com/faisal2410/html_ostad
+https://github.com/faisal2410/css-ostad
+https://github.com/faisal2410/js_basic_ostad_b3
+https://github.com/faisal2410/dom_manipulation
+https://github.com/faisal2410/js_problem_solving_mb3
