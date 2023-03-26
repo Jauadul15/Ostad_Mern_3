@@ -293,3 +293,7 @@ console.log(asdas.toString())
 const numString = "123";
 const num = parseInt(numString,10);
 console.log(num)
+
+
+
+console.log("module 1")
