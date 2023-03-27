@@ -297,3 +297,12 @@ console.log(num)
 
 
 console.log("module 1")
+
+const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi','mango'];
+
+const citrus = fruits.slice(3,5);
+
+console.log(citrus);
+
+
+console.log("emni")
