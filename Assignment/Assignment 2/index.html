@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>BMI Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-$END$
+<form>
+    <label for="weightInput">Weight (kg): </label>
+    <input type="number" id="weightInput"><br>
+
+    <label for="heightInput">Height (m): </label>
+    <input type="number" id="heightInput"><br>
+
+    <button id="calculateBtn" type="button">Calculate BMI</button>
+    <button id="resetBtn" type="button">Reset</button>
+
+    <div id="resultField">
+        <p id="result"></p>
+    </div>
+</form>
+
+<script src="script.js"></script>
 </body>
 </html>
