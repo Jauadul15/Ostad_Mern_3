@@ -42,7 +42,19 @@ calculation(31,4234,5,56,6,6)
 
 //dynamic function
 
-var name=function (value) {
+let name=function (value) {
     return value;
 }
-console.log(name("jauadul karim"))
+console.log(name("Jauadul karim"))
+
+//for loop
+let i;
+for (i=1;i<=10;i++){
+    console.log(i)
+}
+let myArray=['jamal','kamal','rahim']
+for(let oneName of myArray){
+    console.log(oneName);
+}
+//object
+
