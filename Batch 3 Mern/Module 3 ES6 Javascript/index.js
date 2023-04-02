@@ -58,3 +58,30 @@ for(let oneName of myArray){
 }
 //object
 
+let rashik={face:"good",cloth:true,religion:"islam"}
+console.log(["religion"])
+
+let rashik1={
+    family:{
+        vy:true,
+        mother:true,
+        father:true
+
+    },
+    friends:{
+        school:false,
+        college:false,
+        university:false
+    },
+    IsGood:{
+        behaviour:"good",
+        manner:"good"
+    }
+}
+for(let prop in rashik1.IsGood){
+    //console.log(props+":"+ JSON.stringify(rashik1["IsGood"]))
+    console.log(prop +":"+ rashik1.IsGood[prop])
+
+}
+
+//console.log(rashik1["friends"]["college"])
