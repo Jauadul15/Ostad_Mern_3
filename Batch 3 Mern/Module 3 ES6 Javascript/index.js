@@ -85,3 +85,94 @@ for(let prop in rashik1.IsGood){
 }
 
 //console.log(rashik1["friends"]["college"])
+//if else
+let rashik2= {
+    family: {
+        vy: true,
+        mother: true,
+        father: true
+
+    },
+    friendss:{
+        schhol:"nai",
+        college:"nai"
+    }
+}
+if(rashik2.family["mother"]===true){
+    console.log('mother ase')
+}
+else if(rashik2.family["mother"]===false){
+    console.log('mother nai')
+}else{
+    console.log('error')
+}
+
+
+
+//annomous function
+let bn=function () {
+    return "hi"
+}
+console.log(bn())
+
+//array
+
+let jodu=["fa","sa","saff"]
+let fodu=["sda","sad","sadee"]
+for(let item of jodu){
+    console.log(item)
+}
+
+//array destructure
+
+let bd=["dhaka","ctg","barishal","cumilla"]
+
+let [,,,a]=bd
+
+console.log(a)
+
+//map
+let newMap=new Map()
+newMap.set('key1','bangladesh')
+newMap.set('key2','india')
+newMap.set('key3','nepal')
+newMap.set('key4','bhutan')
+newMap.set('key5','japan')
+newMap.set('key6','china')
+
+//console.log(newMap.values())
+//console.log(newMap.keys())
+//newMap.delete('key1')
+//newMap.clear()
+//console.log(newMap.get('key4'))
+// for(let value of newMap.values()){
+//     console.log(value)
+// }
+// for(let key of newMap.keys()){
+//     console.log(key)
+//}
+
+if(newMap.has('key9')){
+    console.log('yes')
+}else{
+    console.log("no")
+}
+
+//set
+let newSet=new Set()
+newSet.add("bd")
+newSet.add("inda")
+newSet.add("nepal")
+newSet.add("bd")
+newSet.add("maldiv")
+newSet.add("hong")
+//newSet.clear()
+//newSet.delete('inda')
+if(newSet.has('bd')){
+    console.log("yes")
+}else
+{
+    console.log("no")
+}
+//console.log(newSet.values())
+
