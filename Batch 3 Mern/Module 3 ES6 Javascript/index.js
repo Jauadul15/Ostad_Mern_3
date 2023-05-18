@@ -176,3 +176,45 @@ if(newSet.has('bd')){
 }
 //console.log(newSet.values())
 
+
+//CLASS
+
+class practice{
+
+kala(name){
+    console.log(name)
+}
+    kala1(name){
+        console.log(name)
+    }
+    kala2(name){
+        console.log(name)
+    }
+    kala3(name){
+        console.log(name)
+    }
+    kala4(name){
+        console.log(name)
+    }
+}
+let obj=new practice
+
+obj.kala("jauad")
+obj.kala1("karim")
+obj.kala2("rashik")
+
+class emni {
+
+    constructor(a,b) {
+        this.firstName=a
+        this.secondName=b
+    }
+    add(){
+        let result=this.firstName+this.secondName
+        console.log(result)
+    }
+}
+let obje=new emni(10,20)
+obje.add()
+
+
