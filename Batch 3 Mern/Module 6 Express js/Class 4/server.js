@@ -1,11 +1,14 @@
 const express=require('express');
 const helmet=require('helmet');
 const {json} = require("express");
+const app=express();
 require('dotenv').config();
 const indexRouter=require('./routes/index');
 const movieRouter=require('./routes/movie');
 const searchRouter=require('./routes/search');
-const app=express();
+//import from middleware
+const { apiKey }= require('./middleware/index')
+
 
 const port=process.env.PORT;
 
@@ -15,19 +18,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(helmet());
 
 
-app.use((req, res, next)=>{
-    if(req.query.api_key != '123456') {
-        res.status(401);
-        res.json({
-            msg: "invalid API Key",
-        })
-    }
-        else{
-            next()
-        }
-})
-
-
+app.use(apiKey);
 
 app.use('/',indexRouter);
 app.use('/movie',movieRouter);
