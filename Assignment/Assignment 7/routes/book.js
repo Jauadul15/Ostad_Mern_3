@@ -4,7 +4,7 @@ const router=express.Router();
 
 router.post("/bookCreation",bookCreation);
 router.get("/SearchAllBooks",SearchAllBooks);
-router.get("/singleBookFind",singleBookFind);
+router.get("/singleBookFind/:id",singleBookFind);
 router.put("/singleBookUpdate/:id",singleBookUpdate);
 router.delete("/singleBookDelete/:id",singleBookDelete);
 

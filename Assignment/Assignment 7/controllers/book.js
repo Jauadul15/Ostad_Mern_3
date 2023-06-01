@@ -39,7 +39,7 @@ exports.SearchAllBooks=async (req,res)=>{
 exports.singleBookFind=async (req,res)=>{
     try {
         const {id}=req.params;
-        const singleBook=await Book.findOne(id);
+        const singleBook=await Book.findOne({_id:id});
         res.status(200).json({
             success:true,
             message:"Find by Id with a single book successful",
