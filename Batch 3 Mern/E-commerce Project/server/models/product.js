@@ -9,10 +9,6 @@ const productSchema = new mongoose.Schema(
       required: true,
       maxlength: 160,
     },
-    slug: {
-      type: String,
-      lowercase: true,
-    },
     description: {
       type: {},
       required: true,

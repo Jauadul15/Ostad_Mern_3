@@ -10,11 +10,6 @@ const categorySchema = new mongoose.Schema({
     maxLength: 32,
     unique: true,
   },
-  slug: {
-    type: String,
-    unique: true,
-    lowercase: true,
-  },
 }, { timestamps: true, versionKey: false });
 
 const Category = mongoose.model("Category", categorySchema);
