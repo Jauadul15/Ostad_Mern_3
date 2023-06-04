@@ -9,7 +9,7 @@ exports.bookCreation=async (req,res)=>{
         res.status(200).json({
             success:true,
             Message:"Book Details Created Successfully",
-            date:bookData
+            data:bookData
         });
 
     }catch (err) {
