@@ -7,13 +7,13 @@ const hpp = require("hpp");
 const xss = require("xss-clean");
 const rateLimiter = require("express-rate-limit");
 const mongoose = require("mongoose");
+const morgan=require("morgan");
 const {json} = require("express");
 require("dotenv").config();
 
 const app = express();
 const port = process.env.PORT || 8000;
 const URI = process.env.DATABASE;
-
 // Security middleware implementations
 app.use(cors());
 app.use(hpp());
@@ -21,6 +21,7 @@ app.use(xss());
 app.use(mongoSanitize());
 app.use(helmet());
 app.use(express.json());
+app.use(morgan('dev'));
 
 // Rate limiter middleware
 const limiter = rateLimiter({

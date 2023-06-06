@@ -37,13 +37,6 @@ const DataSchema=new Schema({
         type: String,
         required: [true, "Password is required."],
         minlength: [8, "Password should be at least 8 characters long."],
-        validate: {
-            validator: function (value) {
-                // Password validation regular expression
-                return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/i.test(value);
-            },
-            message: "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character.",
-        },
     },
     passwordConfirm: {
         type: String,
@@ -65,10 +58,13 @@ const DataSchema=new Schema({
             "Mymensingh",
         ],
         required: [true, "Location is required."],
+    }, role: {
+        type: Number,
+        default: 0,
     },
 
 
-},{timestamp:true,
+},{timestamps:true,
     versionKey:false
 });
 
