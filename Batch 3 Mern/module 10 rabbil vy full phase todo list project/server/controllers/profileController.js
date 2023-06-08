@@ -165,3 +165,32 @@ exports.userLogin = async (req, res) => {
 };
 
 
+exports.ProfileUpdate=async (req,res)=>{
+    try {
+    const {FirstName,LastName,mobileNumber,location,password}=req.body;
+    const user=await Profile.findById(req.user._id);
+    if(!password){
+        return res.json({
+            error:"Password Required"
+        })
+    }
+    const hashedPassword=password ? await hashPassword(password):undefined;
+    const updated=await Profile.findByIdAndUpdate(
+        req.user._id,
+        {
+            FirstName:FirstName|| user.FirstName,
+            LastName:LastName || user.LastName,
+            mobileNumber:mobileNumber || user.mobilenumber,
+            location:location || user.location,
+            password:hashedPassword || user.password
+        },
+        {
+         new:true
+        }
+    );
+    updated.password=undefined;
+    res.json(updated);
+    }catch (e) {
+    console.log(e)
+    }
+}
