@@ -4,7 +4,7 @@ const {Schema}=mongoose;
 const DataSchema=new Schema({
     FirstName:{
         type:String,
-        require:[true,"First Name is Required."],
+        required:[true,"First Name is Required."],
         trim:true,
         minlength:[2, "First name should have at least 2 characters."],
         maxlength:[50, "First name should not exceed 50 characters."],
@@ -44,6 +44,7 @@ const DataSchema=new Schema({
     mobileNumber: {
         type: String,
         trim: true,
+        unique:true,
     },
    location: {
         type: String,
@@ -58,7 +59,8 @@ const DataSchema=new Schema({
             "Mymensingh",
         ],
         required: [true, "Location is required."],
-    }, role: {
+    },
+    role: {
         type: Number,
         default: 0,
     },

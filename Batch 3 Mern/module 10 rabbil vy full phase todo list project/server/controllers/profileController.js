@@ -164,7 +164,6 @@ exports.userLogin = async (req, res) => {
     }
 };
 
-
 exports.ProfileUpdate=async (req,res)=>{
     try {
     const {FirstName,LastName,mobileNumber,location,password}=req.body;
