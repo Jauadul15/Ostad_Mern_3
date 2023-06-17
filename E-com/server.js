@@ -34,8 +34,7 @@ const limiter=rateLimiter({
 app.use(limiter);
 
 // Routing implementation
-readdirSync("./routes").map((r) =>
-    app.use("/api/v1", require(`./routes/${r}`))
+readdirSync("./routes").map((r) => app.use("/api/v1", require(`./routes/${r}`))
 );
 
 

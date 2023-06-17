@@ -64,7 +64,7 @@ exports.createProfile=async (req,res)=>{
                 message:"Please Enter valid User Information.A User Exists by this Information"
             });
         }
-        //Password Hashing Applying in database it will store hashed which user enter a plain password it will turn into hahsed and saved the hashed password in database
+        //Password Hashing Applying in database it will store hashed which user enter a plain password it will turn into hashed and saved the hashed password in database
         const hashedPassword=await hashPassword(Password)
 
         //Register User
@@ -91,5 +91,43 @@ exports.createProfile=async (req,res)=>{
             status:"Something Went Wrong",
             message:"User Not Created For some Internal Issue"
         })
-    };
+    }
 }
+exports.LogIn=async (req,res)=>{
+    try {
+        const {Email,MobileNumber,Password}=req.body;
+        if(!Email){
+            return res.json({error:"Email Is Required"});
+        }
+        if (!MobileNumber) {
+            return res.json({ error: "Mobile Number is required" });
+        }
+        if(!Password){
+            return res.json({error:"Enter Your Password"})
+        }
+        const user=await User.findOne({ $or: [{ Email }, { MobileNumber }] });
+        console.log(user)
+        if(!user){
+            return res.json({error:"Invalid Email or Password.Please Check."})
+        }
+        const match=await comparePassword(Password, user.Password)
+        console.log(match)
+        if(!match){
+            return res.json({error:"Invalid Email or Password"})
+        }
+        const token=jwt.sign({_id:user._id},process.env.JWT_SECRETKEY,{
+          expireIn:"7d",
+        })
+        res.json({
+            user:{
+                Name:user.Name,
+                Email:user.Email,
+                Role:user.Role,
+            },
+            token,
+        });
+    }catch(error) {
+        return res.status(404).json({error:"Something Went Wrong.Try to Login Again"})
+    }
+}
+

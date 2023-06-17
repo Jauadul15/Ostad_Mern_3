@@ -42,3 +42,10 @@ mongoose
     })
     .catch((err)=> console.log(err));
 
+
+
+/* a) The value of --primary-color that will be applied to the <body> element is blue because it is defined on the <body> element itself.
+
+b) If a <p> element is a child of a <div> element, the value of --primary-color that will be applied to the <p> element is green because it is defined on the <div> element.
+
+c) To ensure that the value of --primary-color from the :root selector is applied to the <p> element, you can define it on the <p> element itself or on its parent elements. CSS variables inherit their values from their parent elements by default. This means that if a CSS variable is defined on a parent element, it will be inherited by all of its child elements unless the value is overridden1*/
